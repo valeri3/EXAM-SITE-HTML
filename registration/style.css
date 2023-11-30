@@ -1,129 +1,77 @@
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(255, 255, 255);
-  }
-  
-  h3 {
-    margin-top: 0px;
-    padding-left: 0.1em;
-    font-size: 1.5em;
-    margin-bottom: 15px;
-  
-  }
-  
-  .passwordCharacters {
-    margin-left: 2px; 
-    margin-bottom: 0px; 
-    margin-top: 0px; 
-    font-size: 10px; 
-    color: rgb(138, 138, 138);
-  }
-  
-  .privat {
-    padding: 15px;
-  }
-  
-  .registr-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  
-  .privat-logo {
-    padding-top: 10px;
-    margin-top: 10px;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    padding: 0.2em;
-  }
-  
-  form {
-    width: 340px;
-    font-size: 15px;
-    padding: 1em;
-    padding-bottom: 0px;
-    border-radius: 8px;
-    border: #fafafa;
-  }
-  
-  hr {
-    color: white;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  
-  input {
-    border-radius: 5px;
-    font: 1em;
-    width: 300px;
-    height: 40px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    border: 1px solid #a6a6a6;
-    background-color:#ffffff
-  
-  }
-  
-  .small-text {
-    padding-left: 5px;  
-    font-size: 10px;
-  }
-  
-  .terms {
-    padding-left: 5px;
-    font-size: 10px;
-    margin-bottom: 20px;
-  }
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
 
-  input[type="checkbox"],
-  input[type="radio"] {
-    width: auto;
+  background-image: url('img/14.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.registration-form {
+  background-color: #222222;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.registration-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #b8b8b8;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.registration-form button {
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  background-color: #d47602;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.registration-form button:hover {
+  background-color: #f78e0e;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .registration-form {
+    width: 100%;
   }
-  
-  input[id="submitBtn"] {
-    background-color: #FFC935;
-    border-color: #FFC935;
-    border-radius: 8px;
-    width: 295px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-  }
-  
-  input[id="submitBtn"]:hover {
-    background-color:#e7b52c;
-  }
-  
-  label span {
-    width: 200px;
-    font-size: 13px;
-    margin-bottom: 5px;
-    display: inline-block;
-  }
-  
-  a {
-    color: #0078E5;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  
-  a:hover {
-    color :#0066c5;
-  }
-  
-  img {
-    width: 130px;
-    margin-right: 5px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  
-  }
+}
